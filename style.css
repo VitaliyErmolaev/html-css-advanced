@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.nav {
+    background-color: #222222;
+    height: 75px;
+}
+
+.nav_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+}
+
+.left_nav_item {
+    padding-right: 41px;
+}
+
+.right_nav_menu {
+    padding-left: 33px;
+}
+
+.banner {
+    height: 764px;
+    background-color: #F1E4E6
+}
+
+.banner_img {
+    background-image: url(img/man\ \(1\).png);
+    background-repeat: no-repeat;
+    height: 764px;
+    position: relative;
+}
+
+.banner_text {
+    display: flex;
+}
+
+.strike {
+    width: 10px;
+    height: 90px;
+    background-color: #F16D7F;
+    margin-right: 16px;
+}
+
+
+.decor_text {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+
+}
+
+.decor_text_once {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #222222;
+}
+
+.banner_text {
+    position: absolute;
+    top: 250px;
+    left: 600px;
+}
+
+.span {
+    color: #F16D7F;
+}
+
+.content {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
+.content_box_top {
+
+    display: flex;
+}
+
+.content_item {
+    display: block;
+    width: 360px;
+    height: 260px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.paragraf_box_top {
+    position: absolute;
+    top: 105px;
+    text-align: center;
+    width: 100%;
+}
+
+.content_item:last-child {
+    margin-right: 0;
+
+}
+
+.paragraf_item {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content_item:hover .paragraf_item {
+    text-decoration: underline;
+}
+
+.span_item {
+    font-family: sans-serif;
+    color: #F16D7F;
+    font-size: 25px;
+}
+
+.content_item:hover .span_item {
+    text-decoration: underline;
+    text-decoration-color: #F16D7F;
+}
+
+.content_box_buttom {
+    margin-top: 30px;
+}
+
+.content_item_buttom:hover .paragraf_item {
+    text-decoration: underline;
+}
+
+.content_item_buttom {
+    display: block;
+    position: relative;
+}
+
+.content_item_buttom:hover .span_item {
+    text-decoration: underline;
+    text-decoration-color: #F16D7F;
+}
+
+.paragraf_box_buttom {
+    position: absolute;
+    top: 65px;
+    text-align: center;
+    width: 100%;
+}
