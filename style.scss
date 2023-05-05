@@ -636,10 +636,10 @@ $site-font: 'Lato', sans-serif;
 }
 
 .card_collection_select {
-    border: none;
     @include txt-format(14px, 400, 17px);
     color: #6F6E6E;
     outline: none;
+    border: 1px solid transparent;
 }
 
 .card_collection_select:hover {
@@ -665,4 +665,214 @@ $site-font: 'Lato', sans-serif;
 
 .another_item {
     margin-top: 129px;
+}
+
+.filters {
+    padding: 51px 16px 64px;
+}
+
+.filter_left {
+    position: relative;
+}
+
+.main_details {
+    position: absolute;
+}
+
+details>summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.main_details[open] {
+    width: 360px;
+    box-shadow: 0px 5px 45px 7px rgba(34, 60, 80, 0.2);
+    background: #FFFFFF;
+    padding: 13px 16px;
+    margin-top: -13px;
+    margin-left: -16px;
+}
+
+.main_details[open] .summery_text {
+    color: $site-color;
+}
+
+.main_details[open] .fa-align-left {
+    color: $site-color;
+}
+
+.strike_details {
+    width: 5px;
+    height: 37px;
+    background: $site-color;
+}
+
+.summery_flex {
+    display: flex;
+    justify-content: left;
+    margin-top: 16px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.summery_text {
+    @include txt-format(14px, 600, 17px);
+    text-transform: uppercase;
+    color: #000000;
+    padding-right: 11px;
+}
+
+.main_summery:hover .summery_text {
+    color: $site-color;
+}
+
+.fa-align-left {
+    color: #000000;
+}
+
+.main_summery:hover:hover .fa-align-left {
+    color: $site-color;
+}
+
+.summery_text_details {
+    @include txt-format(17px, 400, 37px);
+    text-transform: uppercase;
+    color: $site-color;
+    margin-left: 11px;
+}
+
+.details_tet_link {
+    @include txt-format(14px, 400, 17px);
+    text-decoration: none;
+    color: #6F6E6E;
+    display: block;
+    margin: 11px 16px 0;
+}
+
+.details_tet_link:hover {
+    color: $site-color;
+}
+
+.filter_right {
+    display: flex;
+    justify-content: center;
+}
+
+.filter_right_option {
+    @include txt-format(14px, 400, 17px);
+    color: #6F6E6E;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.filter_right_option_select {
+    margin-right: 27px;
+}
+
+.pagin {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    border: 1px solid #EBEBEB;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 18px;
+}
+
+.arrow {
+    margin: 15px 15px 12px;
+}
+
+.pagination_numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination_number {
+    @include txt-format(16px, 300, 19px);
+    color: #C4C4C4;
+    text-decoration: none;
+}
+
+.pagination_number__margin {
+    margin-right: 15px;
+}
+
+.pagination_number__color {
+    color: $site-color;
+}
+
+.pagination_number:hover {
+    color: $site-color;
+}
+
+.registration {
+    margin-top: 64px;
+    display: flex;
+}
+
+.registration__form_input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 16px 15px;
+    box-sizing: border-box;
+}
+
+.registration__form {
+    width: 360px;
+    margin-right: 128px;
+}
+
+.registration__form_input::placeholder {
+    @include txt-format(13px, 300, 19px);
+    color: #B1B1B1;
+
+}
+
+.registration__form_gender {
+    margin: 31px 0px;
+    @include txt-format(11px, 300, 13px);
+    color: #000000;
+}
+
+.registration__form_text {
+    margin: 15px 0 39px;
+    width: 100%;
+    @include txt-format(13px, 300, 16px);
+    color: #B1B1B1;
+}
+
+.registration__form_paragraf {
+    @include txt-format(16px, 300, 19px);
+    color: #222222;
+}
+
+.gender__item {
+    margin-right: 10px;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+}
+
+.registration__form_button {
+    padding: 16px 29px;
+    background: $site-color;
+    display: flex;
+    align-items: center;
+    border: 1px solid $site-color;
+}
+
+.registration_button_text {
+    @include txt-format(14px, 400, 17px);
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.fa-long-arrow-right {
+    color: #FFFFFF;
 }

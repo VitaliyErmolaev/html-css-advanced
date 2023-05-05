@@ -709,13 +709,13 @@
 }
 
 .card_collection_select {
-  border: none;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   color: #6F6E6E;
   outline: none;
+  border: 1px solid transparent;
 }
 
 .card_collection_select:hover {
@@ -744,4 +744,251 @@
 
 .another_item {
   margin-top: 129px;
+}
+
+.filters {
+  padding: 51px 16px 64px;
+}
+
+.filter_left {
+  position: relative;
+}
+
+.main_details {
+  position: absolute;
+}
+
+details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.main_details[open] {
+  width: 360px;
+  box-shadow: 0px 5px 45px 7px rgba(34, 60, 80, 0.2);
+  background: #FFFFFF;
+  padding: 13px 16px;
+  margin-top: -13px;
+  margin-left: -16px;
+}
+
+.main_details[open] .summery_text {
+  color: #F16D7F;
+}
+
+.main_details[open] .fa-align-left {
+  color: #F16D7F;
+}
+
+.strike_details {
+  width: 5px;
+  height: 37px;
+  background: #F16D7F;
+}
+
+.summery_flex {
+  display: flex;
+  justify-content: left;
+  margin-top: 16px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.summery_text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-right: 11px;
+}
+
+.main_summery:hover .summery_text {
+  color: #F16D7F;
+}
+
+.fa-align-left {
+  color: #000000;
+}
+
+.main_summery:hover:hover .fa-align-left {
+  color: #F16D7F;
+}
+
+.summery_text_details {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #F16D7F;
+  margin-left: 11px;
+}
+
+.details_tet_link {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration: none;
+  color: #6F6E6E;
+  display: block;
+  margin: 11px 16px 0;
+}
+
+.details_tet_link:hover {
+  color: #F16D7F;
+}
+
+.filter_right {
+  display: flex;
+  justify-content: center;
+}
+
+.filter_right_option {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.filter_right_option_select {
+  margin-right: 27px;
+}
+
+.pagin {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  border: 1px solid #EBEBEB;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 18px;
+}
+
+.arrow {
+  margin: 15px 15px 12px;
+}
+
+.pagination_numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination_number {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #C4C4C4;
+  text-decoration: none;
+}
+
+.pagination_number__margin {
+  margin-right: 15px;
+}
+
+.pagination_number__color {
+  color: #F16D7F;
+}
+
+.pagination_number:hover {
+  color: #F16D7F;
+}
+
+.registration {
+  margin-top: 64px;
+  display: flex;
+}
+
+.registration__form_input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px 16px 15px;
+  box-sizing: border-box;
+}
+
+.registration__form {
+  width: 360px;
+  margin-right: 128px;
+}
+
+.registration__form_input::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #B1B1B1;
+}
+
+.registration__form_input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #B1B1B1;
+}
+
+.registration__form_gender {
+  margin: 31px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration__form_text {
+  margin: 15px 0 39px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.registration__form_paragraf {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222222;
+}
+
+.gender__item {
+  margin-right: 10px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+}
+
+.registration__form_button {
+  padding: 16px 29px;
+  background: #F16D7F;
+  display: flex;
+  align-items: center;
+  border: 1px solid #F16D7F;
+}
+
+.registration_button_text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.fa-long-arrow-right {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
