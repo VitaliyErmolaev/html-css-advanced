@@ -440,6 +440,7 @@ $site-font: 'Lato', sans-serif;
     border: none;
     border: 1px solid $site-color;
     color: #FFFFFF;
+    cursor: pointer;
     transition: background 0.7s, color 0.7s;
 
 }
@@ -812,6 +813,7 @@ details>summary {
 .registration {
     margin-top: 64px;
     display: flex;
+    justify-content: space-between;
 }
 
 .registration__form_input {
@@ -819,6 +821,7 @@ details>summary {
     margin-top: 20px;
     padding: 13px 16px 15px;
     box-sizing: border-box;
+    outline: none;
 }
 
 .registration__form {
@@ -865,14 +868,200 @@ details>summary {
     display: flex;
     align-items: center;
     border: 1px solid $site-color;
+    cursor: pointer;
+    transition: background 0.7s;
 }
 
 .registration_button_text {
     @include txt-format(14px, 400, 17px);
     color: #FFFFFF;
     margin-right: 20px;
+    transition: color 0.7s;
 }
 
 .fa-long-arrow-right {
     color: #FFFFFF;
+    transition: color 0.7s;
+}
+
+.registration__programm {
+    max-width: 652px;
+}
+
+.registration__programm_heading,
+.registration__programm_paragraf {
+    @include txt-format(24px, 300, 29px);
+    color: #000000;
+}
+
+.registration__programm_paragraf {
+    margin: 22px 0;
+}
+
+.registration__progremm_item {
+    @include txt-format(24px, 300, 29px);
+    color: #000000;
+    list-style-type: none;
+}
+
+.registration__progremm_item_list {
+    margin-bottom: 18px;
+}
+
+.registration__progremm_item_list::before {
+    content: url('img/Vector.svg');
+    margin-right: 20px;
+}
+
+.registration__form_button:hover {
+    background: #FFFFFF;
+}
+
+.registration__form_button:hover .registration_button_text {
+    color: $site-color;
+}
+
+.registration__form_button:hover .fa-long-arrow-right {
+    color: $site-color;
+}
+
+.cart_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping_carts {
+    margin-top: 96px;
+    width: 652px;
+}
+
+.cart_item {
+    display: flex;
+    box-shadow: 15px 15px 15px #E5E5E5;
+    margin-bottom: 40px;
+}
+
+.cart_item_image {
+    width: 262px;
+    height: 100%;
+}
+
+.cart_item_text {
+    padding: 22px 22px 0 31px;
+    width: 100%;
+}
+
+.cart_item_name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    align-items: flex-start
+}
+
+.cart_item_name_heading {
+    @include txt-format(24px, 400, 29px);
+    text-transform: uppercase;
+    width: 202px;
+    margin-top: -3px;
+}
+
+.cart_item_carttext {
+    @include txt-format(16px, 400, 26px);
+    margin-bottom: 6px;
+    color: #575757;
+}
+
+.cart_item_span {
+    color: #EF5B70;
+}
+
+.cart_item_quantity {
+    display: flex;
+}
+
+.cart_input_number {
+    margin-left: 5px;
+    padding: 0 1px 0 10px;
+    width: 23px;
+    outline: none;
+}
+
+.order_command {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.button_delete {
+    border: 1px solid #A4A4A4;
+    padding: 16px 40px;
+    @include txt-format(14px, 300, 17px);
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #000000;
+    transition: background 0.7s, color 0.7s;
+}
+
+.order_return {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #A4A4A4;
+    padding: 16px 40px;
+    @include txt-format(14px, 300, 17px);
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #000000;
+    transition: background 0.7s, color 0.7s;
+}
+
+.button_delete:hover {
+    background: $site-color;
+    color: #FFFFFF;
+}
+
+.order_return:hover {
+    background: $site-color;
+    color: #FFFFFF;
+}
+
+.fa-xmark {
+    margin-top: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.fa-xmark:hover {
+    color: $site-color;
+}
+
+.img_cart:hover {
+    transform: scale(1.05);
+}
+
+.cart_adress {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+}
+
+.cart_adress_paragraf {
+    @include txt-format(16px, 300, 19px);
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.adress_input {
+    width: 360px;
+    box-sizing: border-box;
+    padding: 12px 16px 15px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #A4A4A4;
+}
+
+.adress_input::placeholder {
+    @include txt-format(13px, 300, 16px);
+    color: #B1B1B1;
+
 }

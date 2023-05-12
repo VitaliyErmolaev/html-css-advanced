@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/086d7d0a61.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -72,51 +73,86 @@
                 <section class="nav_product">
                     <div class="container">
                         <div class="nav_product_box">
-                            <div class="nav_product_left">REGISTRATION </div>
+                            <div class="nav_product_left">SHOPPING CART </div>
                         </div>
                     </div>
                 </section>
             </header>
             <div class="container">
-                <div class="registration">
-                    <form action="#" class="registration__form">
-                        <p class="registration__form_paragraf">Your Name</p>
-                        <input class="registration__form_input" type="text" placeholder="First Name">
-                        <input class="registration__form_input" type="text" placeholder="Last Name">
-                        <div class="registration__form_gender gender">
-                            <input class="gender__item" type="radio" name="pol"
-                                checked>Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input class="gender__item" type="radio" name="pol">Female
+                <div class="cart_box">
+                    <form class="shopping_carts">
+                        <div class="cart_item">
+                            <a class="img_cart" href="product.html">
+                                <img class="cart_item_image" src="img/item_3.jpg" alt="photo">
+                            </a>
+                            <div class="cart_item_text">
+                                <div class="cart_item_name">
+                                    <p class="cart_item_name_heading">mango people t-shirt</p>
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </div>
+                                <div class="cart_item_carttext cart_item_price">
+                                    <p>Price: <span class="cart_item_span">$300 </span></p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_color">
+                                    <p>Color: Red</p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_size">
+                                    <p>Size: Xl </p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_quantity">
+                                    <p>Quantity: </p>
+                                    <input class="cart_input_number" type="number" placeholder="1" min="1" max="10"
+                                        step="1" value="">
+                                </div>
+                            </div>
                         </div>
-                        <p class="registration__form_paragraf">Login details</p>
-                        <input class="registration__form_input" type="email" placeholder="Email">
-                        <input class="registration__form_input" type="password" placeholder="Password">
-                        <p class="registration__form_text">Please use 8 or more characters, with at least 1 number and
-                            mixture of uppercase and lowercase letters</p>
-                        <button type="submit" class="registration__form_button">
-                            <p class="registration_button_text">JOIN NOW</p>
-                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </button>
+                        <div class="cart_item">
+                            <a class="img_cart" href="product.html">
+                                <img class="cart_item_image" src="img/catalog_2.jpg" alt="photo">
+                            </a>
+                            <div class="cart_item_text">
+                                <div class="cart_item_name">
+                                    <p class="cart_item_name_heading">mango people t-shirt</p>
+                                    <i class="fa-solid fa-xmark fa-xl"></i>
+                                </div>
+                                <div class="cart_item_carttext cart_item_price">
+                                    <p>Price: <span class="cart_item_span">$300 </span></p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_color">
+                                    <p>Color: Red</p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_size">
+                                    <p>Size: Xl </p>
+                                </div>
+                                <div class="cart_item_carttext cart_item_quantity">
+                                    <p>Quantity: </p>
+                                    <input class="cart_input_number" type="number" placeholder="1" min="1" max="10"
+                                        step="1" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_command">
+                            <button class="button_delete" type="reset">clear shopping cart</button>
+                            <a class="order_return" href="catalog.html">continue shopping</a>
+                        </div>
+
                     </form>
-                    <article class="registration__programm">
-                        <p class="registration__programm_heading">LOYALTY HAS ITS PERKS</p>
-                        <p class="registration__programm_paragraf">Get in on the loyalty program where you can earn
-                            points and
-                            unlock serious perks. Starting with these
-                            as soon as you join:</p>
-                        <ul class="registration__progremm_item">
-                            <li class="registration__progremm_item_list">15% off welcome offer
-                            </li>
-                            <li class="registration__progremm_item_list">Free shipping, returns and exchanges on all
-                                orders
-                            </li>
-                            <li class="registration__progremm_item_list">$10 off a purchase on your birthday
-                            </li>
-                            <li class="registration__progremm_item_list">Early access to products</li>
-                            <li class="registration__progremm_item_list">Exclusive offers & rewards</li>
-                        </ul>
-                    </article>
+                    <form class="shipping_adress">
+                        <div class="cart_adress">
+                            <p class="cart_adress_paragraf">shipping adress</p>
+                            <input class="adress_input" type="text" placeholder="Bangladesh">
+                            <input class="adress_input" type="text" placeholder="State">
+                            <input class="adress_input" type="text" placeholder="Postcode / Zip">
+                            <button class="button_price">get a quote</button>
+                        </div>
+                        <div class="cart_total">
+                            <p></p>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    </form>
                 </div>
+
             </div>
         </div>
         <footer class="footer">
@@ -163,6 +199,7 @@
             </footer>
         </footer>
     </div>>
+
 </body>
 
 </html>
